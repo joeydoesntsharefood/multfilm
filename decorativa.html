@@ -5,13 +5,16 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>MultFilm</title>
+        <title>MultFilm do Brasil</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
         <!-- Favicons -->
         <link href="assets/img/favicon.png" rel="icon">
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -26,6 +29,14 @@
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+          /* Make the image fully responsive */
+          .carousel-inner img {
+            width: 100%;
+            height: 100%;
+          }
+          </style>
 
     </head>
     <body>
@@ -51,7 +62,7 @@
         <header id="header" class="d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">MultFilm</a></h1>
+            <h1 class="logo"><a href="index.html">MultFilm do Brasil</a></h1>
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -89,9 +100,29 @@
                 <div class="container">
         
                 <div class="row">
-                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-                        <img src="assets/img/decorativa/decorativa1.png" class="img-fluid" alt="">
+                  <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                      </ul>
+                      <!-- The slideshow -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/img/decorativa/decorativa1.png" alt="Los Angeles" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/img/decorativa/decorativa2.png" alt="Chicago" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/img/decorativa/decorativa3.png" alt="New York" width="1100" height="500">
+                        </div>
+                      </div>
                     </div>
+
+                  </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>Conheça a película decorativa</h3>
                         <p class="font-italic">
@@ -106,19 +137,6 @@
                     </div>
                 </div>
         
-                </div>
-            </section>
-
-            <section id="about" class="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-righ">
-                            <img src="assets/img/decorativa/decorativa2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-left">
-                            <img src="assets/img/decorativa/decorativa3.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -171,12 +189,13 @@
         
                   <div class="col-lg-4 col-md-6">
                     <div class="footer-info">
-                      <h3>Multfilm</h3>
+                      <h3>Multfilm do Brasil</h3>
                       <p>
                         Av.Mario Pedro Vercellino <br>
                         180, 18556-040 - Boituva/SP<br><br>
                         <strong>Celular:</strong> (15)97403-2153<br>
                         <strong>Email:</strong> contato@multfilmbr.com.br<br>
+                        <strong>CNPJ:</strong> 20.718.146/0001-84<br>
                       </p>
                       <!--
                         <div class="social-links mt-3">
@@ -211,7 +230,7 @@
         
             <div class="container">
               <div class="copyright">
-                &copy; Copyright <strong><span>Multfilm</span></strong>. Todos os direitos reservados.
+                &copy; Copyright <strong><span>Multfilm do Brasil</span></strong>. Todos os direitos reservados.
               </div>
               <div class="credits">
                 Desenvolvido pela <a href="#">Freeze Software Dev.</a>
@@ -233,7 +252,7 @@
           <div class="cookie-disclaimer">
             <div class="cookie-close accept-cookie"><i class="fa fa-times"></i></div>
             <div class="container">
-              <p>Bem vindo ao MultFilm. Se você aceita os termos de privacidade da MultFilm, clique em aceitar. 
+              <p>Bem vindo ao MultFilm do Brasil. Se você aceita os termos de privacidade da MultFilm do Brasil, clique em aceitar. 
                 <a href="./terms.html">Ler os termos.</a>. 
               <button type="button" class="btn btn-success accept-cookie">Aceitar</button>
             </div>
@@ -251,6 +270,11 @@
         <script src="assets/vendor/php-email-form/validate.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
         <script src="assets/js/cookie.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
         <!-- Template Main JS File -->
